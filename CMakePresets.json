@@ -1,0 +1,25 @@
+{
+  "version": 6,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 16,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "default",
+      "displayName": "教学平台默认配置",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build",
+      "architecture": "x64"
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "release",
+      "displayName": "构建 Release",
+      "configurePreset": "default",
+      "configuration": "Release"
+    }
+  ]
+}
