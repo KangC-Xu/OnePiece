@@ -6,7 +6,7 @@
 </defs>
 <rect width="1080" height="540" rx="18" fill="#111b28"/>
 <g font-family="Segoe UI,Microsoft YaHei,Arial,sans-serif">
-<text x="40" y="45" fill="#6bc8e8" font-size="14" letter-spacing="2">ONEPIECE / ARCHITECTURE</text>
+<text x="40" y="45" fill="#6bc8e8" font-size="14" letter-spacing="2">ONEPIECE / 软件架构</text>
 <text x="40" y="82" fill="#f2f6fb" font-size="28" font-weight="700">把算法组织成可交互的桌面工具</text>
 <rect x="40" y="132" width="280" height="136" rx="10" fill="#1a3446" stroke="#3a7187"/>
 <text x="60" y="170" fill="#f2f6fb" font-size="22" font-weight="600">Qt Widgets 宿主</text>
