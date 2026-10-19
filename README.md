@@ -22,18 +22,7 @@ This is a personal learning project. Height-map sampling uses image intensity, n
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    UI["Qt Widgets host<br/>Image · Parameters · Results"] --> Loader["Plugin loader"]
-    UI --> Runner["Algorithm runner"]
-    Loader --> Factory["Plugin factories"]
-    Runner --> Factory
-    Factory --> Vision["Traditional vision<br/>OpenCV"]
-    Factory --> Height["Height-map sampling"]
-    Factory --> Model["Classification<br/>ONNX Runtime"]
-    Contract["Shared contract<br/>Metadata · Request · Result"] -.-> UI
-    Contract -.-> Factory
-```
+![OnePiece architecture: Qt host, shared contract, and three algorithm plugins](doc/architecture.svg)
 
 ```text
 app/           Qt application, plugin discovery, and execution

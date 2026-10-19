@@ -22,18 +22,7 @@
 
 ## 结构
 
-```mermaid
-flowchart LR
-    UI["Qt Widgets 宿主<br/>图像 · 参数 · 结果"] --> Loader["插件加载器"]
-    UI --> Runner["算法运行器"]
-    Loader --> Factory["插件工厂"]
-    Runner --> Factory
-    Factory --> Vision["传统视觉<br/>OpenCV"]
-    Factory --> Height["高度图采样"]
-    Factory --> Model["分类推理<br/>ONNX Runtime"]
-    Contract["统一契约<br/>元数据 · 输入 · 结果"] -.-> UI
-    Contract -.-> Factory
-```
+![OnePiece 架构：Qt 宿主、统一契约和三个算法插件](doc/architecture.zh-CN.svg)
 
 ```text
 app/           Qt 应用、插件发现与算法执行

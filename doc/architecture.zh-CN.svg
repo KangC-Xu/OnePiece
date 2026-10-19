@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="540" viewBox="0 0 1080 540" role="img" aria-labelledby="title desc">
+<title id="title">OnePiece 算法插件架构</title>
+<desc id="desc">Qt 宿主通过加载器和运行器调用三个原生算法插件，各模块使用统一契约通信。</desc>
+<defs>
+<marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#8fa4b9" stroke-width="1.5"/></marker>
+</defs>
+<rect width="1080" height="540" rx="18" fill="#111b28"/>
+<g font-family="Segoe UI,Microsoft YaHei,Arial,sans-serif">
+<text x="40" y="45" fill="#6bc8e8" font-size="14" letter-spacing="2">ONEPIECE / ARCHITECTURE</text>
+<text x="40" y="82" fill="#f2f6fb" font-size="28" font-weight="700">把算法组织成可交互的桌面工具</text>
+<rect x="40" y="132" width="280" height="136" rx="10" fill="#1a3446" stroke="#3a7187"/>
+<text x="60" y="170" fill="#f2f6fb" font-size="22" font-weight="600">Qt Widgets 宿主</text>
+<text x="60" y="204" fill="#bdcddd" font-size="17">图像输入 · 参数表单</text>
+<text x="60" y="234" fill="#bdcddd" font-size="17">结果预览 · 运行日志</text>
+<rect x="380" y="132" width="290" height="136" rx="10" fill="#242c48" stroke="#595a87"/>
+<text x="400" y="170" fill="#f2f6fb" font-size="22" font-weight="600">插件加载与执行</text>
+<text x="400" y="204" fill="#bdcddd" font-size="17">发现 DLL · 读取元数据</text>
+<text x="400" y="234" fill="#bdcddd" font-size="17">工厂创建 → 初始化 → 执行</text>
+<path d="M320 200 H370 M670 200 H704 V166 H730 M704 200 V282 H730 M704 282 V398 H730" fill="none" stroke="#8fa4b9" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="740" y="118" width="300" height="96" rx="10" fill="#1b3939" stroke="#35726c"/>
+<text x="760" y="153" fill="#f2f6fb" font-size="21" font-weight="600">传统视觉</text>
+<text x="760" y="185" fill="#bdcddd" font-size="16">OpenCV · 阈值 · 边缘与轮廓</text>
+<rect x="740" y="234" width="300" height="96" rx="10" fill="#1b3939" stroke="#35726c"/>
+<text x="760" y="269" fill="#f2f6fb" font-size="21" font-weight="600">高度图采样</text>
+<text x="760" y="301" fill="#bdcddd" font-size="16">模拟点云 · 平均高度</text>
+<rect x="740" y="350" width="300" height="96" rx="10" fill="#1b3939" stroke="#35726c"/>
+<text x="760" y="385" fill="#f2f6fb" font-size="21" font-weight="600">分类推理</text>
+<text x="760" y="417" fill="#bdcddd" font-size="16">可选 ONNX Runtime CPU</text>
+<rect x="40" y="330" width="630" height="116" rx="10" fill="#1a2635" stroke="#47576b"/>
+<text x="60" y="368" fill="#f2f6fb" font-size="21" font-weight="600">统一契约</text>
+<text x="60" y="402" fill="#bdcddd" font-size="17">工厂 · 算法接口 · 元数据 · 请求 · 结果</text>
+<path d="M180 330 V280 M525 330 V280" fill="none" stroke="#8fa4b9" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+<text x="40" y="497" fill="#a9bbce" font-size="16">C++17 · Qt 6 · OpenCV · CMake  |  个人学习项目</text>
+</g>
+</svg>
